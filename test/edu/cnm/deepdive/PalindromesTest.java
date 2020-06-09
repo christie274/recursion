@@ -6,6 +6,19 @@ import org.junit.jupiter.api.Test;
 
 class PalindromesTest {
 
+  static final String[] knownPalindromes = {
+      "radar",
+      "abba",
+      "x",
+      ""
+  };
+
+  static final String[] knownNonPalindromes = {
+      "sonar",
+      "abb"
+};
+
+
   @Test
   void testRecursive() {
   assertTrue(Palindromes.testRecursive("radar"));
