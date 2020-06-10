@@ -1,5 +1,9 @@
 package edu.cnm.deepdive;
 
+import java.lang.reflect.Method;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class Palindromes {
 
   public static boolean testRecursive(String input) {
@@ -11,4 +15,13 @@ public class Palindromes {
 
   }
 
+  public static boolean testDenormalized(String[] input) {
+    String normalized = replaceAll();
+        Boolean b;
+    if ((testRecursive(String)
+    )) {
+    }
+    return testRecursive(normalized);
+  }
 }
+

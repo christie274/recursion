@@ -26,7 +26,7 @@ class FactorialsTest {
     }
     assertThrows(IllegalArgumentException.class, () -> Factorials.computeRecursive(-1));
   }
-
+@Test
   void computeIterative() {
     for (long[] testCase : testCases) {
       int n = (int) testCase[0];
