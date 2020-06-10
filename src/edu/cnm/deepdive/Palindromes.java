@@ -16,4 +16,17 @@ public class Palindromes {
     String normalized = input.replaceAll("[\\W_]+", "").toLowerCase();
     return testRecursive(normalized);
   }
+
+
+public static boolean testIterative (String input) {
+  boolean isPalindrome = true;
+
+  for (int i = 0, j = input.length() - 1; i < j; i++, j--) {
+    if (input.charAt(i) != input.charAt(j)) {
+      isPalindrome = false;
+      break;
+    }
+  }
+  return isPalindrome;
+}
 }

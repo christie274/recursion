@@ -33,6 +33,9 @@ class PalindromesTest {
   void testDenormalized() {
     assertTrue(Palindromes.testDenormalized("A man, a plan, a canal - Panama!"));
     assertFalse(Palindromes.testDenormalized("Aman, a plan, a dam - Hoover!"));
+
+
+  }
 }
-}
+
 
