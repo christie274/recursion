@@ -26,15 +26,12 @@ public class Factorials {
 
 
   public static BigInteger computeIterative(int n) throws IllegalArgumentException {
-    BigInteger result;
+    BigInteger result = BigInteger.ONE;
     if (n < 0) {
       throw new IllegalArgumentException();
     }
-    if (n == 0) {
-      result = BigInteger.valueOf(1);
-
-    }else {
-      result = BigInteger.valueOf(n -1);
+    for (int i = 1; i <= n; i++) {
+      result = result.multiply(BigInteger.valueOf(i));
     }
     return result;
   }
