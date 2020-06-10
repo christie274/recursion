@@ -16,12 +16,16 @@ class PalindromesTest {
   static final String[] knownNonPalindromes = {
       "sonar",
       "abb"
-};
+  };
 
 
   @Test
   void testRecursive() {
-  assertTrue(Palindromes.testRecursive("radar"));
-  assertFalse(Palindromes.testRecursive("sonar"));
+    assertTrue(Palindromes.testRecursive("radar"));
+    assertFalse(Palindromes.testRecursive("sonar"));
+    assertTrue(Palindromes.testRecursive("abba"));
+    assertTrue(Palindromes.testRecursive("x"));
+    assertFalse(Palindromes.testRecursive("abb"));
+    assertTrue(Palindromes.testRecursive(""));
   }
 }
